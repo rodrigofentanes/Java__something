@@ -3,12 +3,8 @@ package br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes;
 public class Movie extends Title implements Classifiable {
 	private static final Movie instance = new Movie();
 	public static Movie getInstance() { return instance; }
-
-	private int anoDeLancamento;
+	
 	private int duracaoEmMinutos;
-
-	public int getAnoDeLancamento() { return anoDeLancamento; }
-	public void setAnoDeLancamento(int anoDeLancamento) { this.anoDeLancamento = anoDeLancamento; }
 	
 	public int getDuracaoEmMinutos() { return duracaoEmMinutos; }
 	public void setDuracaoEmMinutos(int duracaoEmMinutos) { this.duracaoEmMinutos = duracaoEmMinutos; }
@@ -16,8 +12,7 @@ public class Movie extends Title implements Classifiable {
 	public Movie() {}
 
 	public Movie(String nome, boolean incluidoNoPlano, int anoDeLancamento, int duracaoEmMinutos) {
-		super(nome, incluidoNoPlano);
-		this.anoDeLancamento = anoDeLancamento;
+		super(nome, incluidoNoPlano, anoDeLancamento);
 		this.duracaoEmMinutos = duracaoEmMinutos;
 	}
 

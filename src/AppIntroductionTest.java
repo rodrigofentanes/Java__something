@@ -1,4 +1,5 @@
 import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Movie;
+import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Serie;
 
 public class AppIntroductionTest {
     // Digitar "psvm" é um atalho para criar uma método "public static void main(String[] args)"
@@ -26,6 +27,44 @@ public class AppIntroductionTest {
         
         Movie movie2 = Movie.getInstance();
         movie2.exibeFixaTecnica();
+        
+        System.out.println("########################################################");
+        
+        // É importante ressaltar que só existe criação de objeto quando temos o "new",
+        // fora este, estaremos atribuindo os valores por referência, 
+        // no caso abaixo, tanto o "serie" quanto o "serie0" estarão apontando para o mesmo espaço de memória. 
 
+        Serie serie = new Serie(
+            "The big bang theory", 
+            true, 
+            1999, 
+            2
+        );
+
+        Serie serie0 = serie;
+
+        Serie serie1 = new Serie(
+            "westworld", 
+            true, 
+            1999, 
+            3
+        );
+
+        System.out.println("serie  => " + serie);
+        System.out.println("serie0 => " + serie0);
+        System.out.println("serie1 => " + serie1);
+
+        System.out.println("########################################################");
+
+        serie = new Serie(
+            "The hundred", 
+            true, 
+            1999, 
+            10
+        );
+
+        System.out.println("serie  => " + serie);
+        System.out.println("serie0 => " + serie0);
+        System.out.println("serie1 => " + serie1);
     }
 }

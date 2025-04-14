@@ -11,8 +11,8 @@ public class Serie extends Title {
 
   public Serie() {}
 
-  public Serie(String nome, boolean incluidoNoPlano, int numeroDeTemporadas) {
-    super(nome, incluidoNoPlano);
+  public Serie(String nome, boolean incluidoNoPlano, int anoDeLancamento, int numeroDeTemporadas) {
+    super(nome, incluidoNoPlano, anoDeLancamento);
     this.numeroDeTemporadas = numeroDeTemporadas;
   }
 
