@@ -35,7 +35,7 @@ public class Movie extends Title implements Classifiable {
 		return 0;
 	}
 
-	// Aqui ocorre uma sobrescrita de um método padrão do jáva, isso irá mudar inclusive a forma como o array é impresso no println().
+	// Aqui ocorre uma sobrescrita de um método padrão do java, isso irá mudar inclusive a forma como o array é impresso no println().
 	// Este é um recurso muito interessante para debugar código.
 	@Override
 	public String toString() {
