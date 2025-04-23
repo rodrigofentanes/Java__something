@@ -22,6 +22,6 @@ public class AppServiceTest {
 
     ResponseSearchMovieTO responseSearchMovieTO = new ResponseSearchMovieTO().parse(response.body());
 
-    System.out.println(responseSearchMovieTO);
+    System.out.println(responseSearchMovieTO.outroNomeQualquerParaPage);
   }
 }

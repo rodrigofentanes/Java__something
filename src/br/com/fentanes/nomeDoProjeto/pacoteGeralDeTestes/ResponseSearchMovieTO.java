@@ -4,8 +4,15 @@ import java.util.ArrayList;
 import com.google.gson.Gson;
 // import com.fasterxml.jackson.core.JsonProcessingException;
 // import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.annotations.SerializedName;
 
 public class ResponseSearchMovieTO {
+  @SerializedName("page") // A variavel "outroNomeQualquerParaPage" abaixo deveria se chamar "page" para que o GSON atribuisse seu valor corretamente, porem tbm e possivel indicar para o GSON qual valor atribuir atraves da ANOTACAO "@SerializedName"
+  public int outroNomeQualquerParaPage;
+  public ArrayList<Result> results;
+  public int total_pages;
+  public int total_results;
+
   public class Result{
     public boolean adult;
     public String backdrop_path;
@@ -21,13 +28,6 @@ public class ResponseSearchMovieTO {
     public boolean video;
     public double vote_average;
     public int vote_count;
-  }
-
-  public class Root{
-    public int page;
-    public ArrayList<Result> results;
-    public int total_pages;
-    public int total_results;
   }
 
   public ResponseSearchMovieTO parse(String json) {
