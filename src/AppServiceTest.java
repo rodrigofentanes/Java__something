@@ -20,7 +20,7 @@ public class AppServiceTest {
       
     System.out.println(response.body());
 
-    ResponseSearchMovieTO responseSearchMovieTO = new ResponseSearchMovieTO().parse(response.body())
+    ResponseSearchMovieTO responseSearchMovieTO = new ResponseSearchMovieTO().parse(response.body());
 
     System.out.println(responseSearchMovieTO);
   }

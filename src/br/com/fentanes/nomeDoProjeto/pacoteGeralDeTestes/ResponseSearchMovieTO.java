@@ -1,10 +1,9 @@
 package br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes;
 
 import java.util.ArrayList;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+// import com.fasterxml.jackson.core.JsonProcessingException;
+// import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ResponseSearchMovieTO {
   public class Result{
@@ -32,21 +31,21 @@ public class ResponseSearchMovieTO {
   }
 
   public ResponseSearchMovieTO parse(String json) {
-    ObjectMapper objectMapper = new ObjectMapper();
-    ResponseSearchMovieTO data = objectMapper.readValue(json, ResponseSearchMovieTO.class);
-    return (ResponseSearchMovieTO) data;
+    // ObjectMapper objectMapper = new ObjectMapper();
+    // ResponseSearchMovieTO data = objectMapper.readValue(json, ResponseSearchMovieTO.class);
+    // return (ResponseSearchMovieTO) data;
 
-    // OU
+    // // OU
 
-    ResponseSearchMovieTO data = new ObjectMapper().readValue(json, ResponseSearchMovieTO.class);
-    return (ResponseSearchMovieTO) data;
+    // ResponseSearchMovieTO data = new ObjectMapper().readValue(json, ResponseSearchMovieTO.class);
+    // return (ResponseSearchMovieTO) data;
 
-    // OU
+    // // OU
 
-    Gson gson = new Gson(); // Or use new GsonBuilder().create();
-    ResponseSearchMovieTO data = gson.fromJson(json, ResponseSearchMovieTO.class); // deserializes json into "data"
+    // Gson gson = new Gson(); // Or use new GsonBuilder().create();
+    // ResponseSearchMovieTO data = gson.fromJson(json, ResponseSearchMovieTO.class); // deserializes json into "data"
     
-    // OU
+    // // OU
 
     ResponseSearchMovieTO data = new Gson().fromJson(json, ResponseSearchMovieTO.class);
     return (ResponseSearchMovieTO) data;
