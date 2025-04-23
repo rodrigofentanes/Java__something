@@ -1,4 +1,4 @@
-package br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes;
+package br.com.fentanes.nomeDoProjeto.Model;
 
 import java.util.ArrayList;
 import com.google.gson.Gson;

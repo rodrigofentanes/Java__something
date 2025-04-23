@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.List;
 
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Title;
+import br.com.fentanes.nomeDoProjeto.Model.Title;
 
 public class AppListTest {
   public static void main(String[] args) {

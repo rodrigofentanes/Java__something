@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Movie;
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Serie;
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Title;
+import br.com.fentanes.nomeDoProjeto.Model.Movie;
+import br.com.fentanes.nomeDoProjeto.Model.Serie;
+import br.com.fentanes.nomeDoProjeto.Model.Title;
 
 public class AppSortListTest {
   public static void main(String[] args) {

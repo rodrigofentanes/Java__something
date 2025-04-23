@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Movie;
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Serie;
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Title;
+import br.com.fentanes.nomeDoProjeto.Model.Movie;
+import br.com.fentanes.nomeDoProjeto.Model.Serie;
+import br.com.fentanes.nomeDoProjeto.Model.Title;
 
 public class AppArrayListTest {
   public static void main(String[] args) {

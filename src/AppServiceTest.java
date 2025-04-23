@@ -4,7 +4,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.ResponseSearchMovieTO;
+import br.com.fentanes.nomeDoProjeto.Model.ResponseSearchMovieTO;
 
 public class AppServiceTest {
   public static void main(String[] args) throws IOException, InterruptedException {

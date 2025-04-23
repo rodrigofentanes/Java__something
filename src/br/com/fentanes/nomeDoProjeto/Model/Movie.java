@@ -1,4 +1,6 @@
-package br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes;
+package br.com.fentanes.nomeDoProjeto.Model;
+
+import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Classifiable;
 
 public class Movie extends Title implements Classifiable {
 	private static final Movie instance = new Movie();

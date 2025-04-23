@@ -1,5 +1,5 @@
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Movie;
-import br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes.Serie;
+import br.com.fentanes.nomeDoProjeto.Model.Movie;
+import br.com.fentanes.nomeDoProjeto.Model.Serie;
 
 public class AppIntroductionTest {
     // Digitar "psvm" é um atalho para criar uma método "public static void main(String[] args)"

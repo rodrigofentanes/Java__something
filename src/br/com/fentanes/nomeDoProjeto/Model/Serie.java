@@ -1,4 +1,4 @@
-package br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes;
+package br.com.fentanes.nomeDoProjeto.Model;
 
 public class Serie extends Title {
   private static final Serie instance = new Serie();

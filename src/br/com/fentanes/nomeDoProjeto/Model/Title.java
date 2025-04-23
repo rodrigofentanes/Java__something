@@ -1,4 +1,4 @@
-package br.com.fentanes.nomeDoProjeto.pacoteGeralDeTestes;
+package br.com.fentanes.nomeDoProjeto.Model;
 
 public class Title implements Comparable<Title> {
   private String nome;
